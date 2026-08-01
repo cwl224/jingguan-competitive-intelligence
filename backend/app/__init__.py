@@ -1,0 +1,2 @@
+"""Jinguan competitive intelligence backend."""
+

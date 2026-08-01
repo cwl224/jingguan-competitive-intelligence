@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jinguan-backend"
+version = "0.1.0"
+description = "FastAPI backend for the Jinguan competitive intelligence workbench"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "beautifulsoup4>=4.12,<5",
+  "feedparser>=6,<7",
+  "httpx>=0.27,<1",
+  "openpyxl>=3.1,<4",
+  "playwright>=1.50,<2",
+  "pypdf>=5,<7",
+  "python-docx>=1.1,<2",
+  "python-dotenv>=1,<2",
+  "python-multipart>=0.0.20,<1",
+  "reportlab>=4.4,<5",
+  "uvicorn[standard]>=0.30,<1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
