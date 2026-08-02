@@ -13,7 +13,7 @@
 
 **基于 React + FastAPI + RAG + 多 Agent 的证据化竞品情报分析平台**
 
-[项目简介](#项目简介) · [核心亮点](#核心亮点) · [技术架构](#技术架构) · [功能模块](#功能模块) · [快速启动](#快速启动) · [接口概览](#接口概览)
+[项目简介](#项目简介) · [核心亮点](#核心亮点) · [技术架构](#技术架构) · [功能模块](#功能模块) · [接口概览](#接口概览)
 
 </div>
 
@@ -336,38 +336,6 @@ NEXT_PUBLIC_AUTH_TOKEN=
 完整接口定义和可交互调试页面请访问 `http://127.0.0.1:8000/docs`。
 
 ---
-
-## 开发与验证
-
-### 后端测试
-
-```powershell
-cd backend
-.\.venv\Scripts\python.exe -m pytest
-```
-
-### 前端检查与构建
-
-```powershell
-cd frontend
-npm.cmd run lint
-npm.cmd test
-```
-
-`npm.cmd test` 会先完成 Vinext 生产构建，再验证服务端首屏渲染和 FastAPI 接口契约。
-
-### 常用排查命令
-
-```powershell
-# 检查本地服务端口
-Get-NetTCPConnection -LocalPort 5173,8000 -State Listen
-
-# 后端健康检查
-Invoke-RestMethod http://127.0.0.1:8000/health
-
-# 查看 Git 工作区状态
-git status -sb
-```
 
 ---
 
